@@ -1,0 +1,38 @@
+{
+  "name": "aucapp",
+  "version": "1.0.0",
+  "homepage": "https://babyobmyway.github.io/firstprojectofcompanyvb/",
+  "description": "auction podcast app",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "mkhail",
+  "license": "ISC",
+  "devDependencies": {
+    "aos": "^3.0.0-beta.6",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "firebase": "^9.8.3",
+    "gh-pages": "^4.0.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "three": "^0.143.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "json-loader": "^0.5.7",
+    "raw-loader": "^4.0.2"
+  }
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html class="no-js" id="no-js" lang="en" style="background-color: black;">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>VB CORPORATION</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+
+    <!-- script
+    ================================================== -->
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="vb.ico" type="image/x-icon">
+    <link rel="icon" href="vb.ico" type="image/x-icon">
+
+</head>
+
+<body id="top" class="no-js" style="display: none">
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- pageheader
+    ================================================== -->
+    <section class="s-pageheader s-pageheader--home">
+
+        <header class="header">
+            <div class="header__content row">
+                <div class="header__logo">
+                    <a class="logo">
+                    </a>
+                </div> <!-- end header__logo -->
+
+                <ul class="header__social">
+                    <li>
+                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+                <i class="fa fa-sign-in login-icon" aria-hidden="true"></i>
+                <a class="header__search-trigger" id="modal-btn" href="#0">Login</a>
+                <div id="myDropdown" class="header__dropdown-content">
+                    <a href="#" class="forlog">Log</a>
+                    <a href="#" class="forlogout">My bids</a>
+                    <a href="#" class="forlogout">Logout</a>
+                </div>
+
+                <div class="header__search">
+
+                    <form role="search" method="get" class="header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+        
+                    <a title="Close Search" class="header__overlay-close">Close</a>
+
+                </div>  <!-- end header__search -->
+
+
+                <a class="header__toggle-menu" title="Menu"><span>Menu</span></a>
+
+                <nav class="header__nav-wrap">
+
+                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                    <ul class="header__nav">
+                        <li><a id="header__nav-mybids" style="display:none">My bids</a></li>
+                        <li class="current"><a title="">Home</a></li>
+                        <li><a href="single-standard.html" title="">Auction</a></li>
+                        <li>
+                            <a href="category.html" title="">Albums</a>
+                            <ul class="sub-menu">
+                                <li><a href="legendarydropone.html">LEGENDARY DROP: ONE</a></li>
+                                <li><a href="category.html">2020</a></li>
+                                <li><a href="#">LEGENDARY DROP 2: FAMILY</a></li>
+                                <li><a href="#">LEGENDARY DROP 2: HATE</a></li>
+                                <li><a href="#">LEGENDARY DROP 2: LOVE</a></li>
+                                <li><a href="#">LEGENDARY DROP THREE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" title="">Archive</a></li>
+                        <li><a href="" title="">About VB</a></li>
+                    </ul> <!-- end header__nav -->
+
+                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+                </nav> <!-- end header__nav-wrap -->
+
+            </div> <!-- header-content -->
+        </header> <!-- header -->
+
+
+        <div class="pageheader-content row">
+            <div class="col-full">
+
+                <div class="featured">
+
+                    <div class="featured__column featured__column--big" id="sliderss">
+                        <div class="entry albumslides1 activeAlbumSlide" >
+                            
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Music</a></span>
+
+                                <h1><a href="#0" title="">VB: LEGENDARY DROP 3</a></h1>
+                            </div> <!-- end entry__content -->
+                            
+                        </div>
+                        <div class="entry albumslides2" style="display: none">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Music</a></span>
+
+                                <h1><a href="#0" title="">VB: FAMILY</a></h1>
+                            </div> <!-- end entry__content -->
+                            
+                        </div>
+                        <div class="entry albumslides3" style="display: none">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Music</a></span>
+
+                                <h1><a href="#0" title="">VB: LOVE</a></h1>
+                            </div> <!-- end entry__content -->
+                            
+                        </div> <!-- end entry -->
+                        <!--
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                            -->
+                    </div> <!-- end featured__big -->
+
+                    <div class="featured__column featured__column--small">
+
+                        <div class="entry blockforauc">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Auction</a></span>
+
+                                <h1><a href="#0" title="">Village boyzz merch for really funs</a></h1>
+
+                            </div> <!-- end entry__content -->
+                          
+                        </div> <!-- end entry -->
+
+                        <div class="entry blockforarchive">
+
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">LifeStyle</a></span>
+
+                                <h1><a href="#0" title="">Throwback To The Good Old Days.</a></h1>
+
+                            </div> <!-- end entry__content -->
+
+                        </div> <!-- end entry -->
+
+                    </div> <!-- end featured__small -->
+                </div> <!-- end featured -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end pageheader-content row -->
+
+    </section> <!-- end s-pageheader -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content">
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link"></a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">July 14, 2022</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">First project for VB</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Project for my friends
+                            </p>
+                        </div>
+                    </div>
+    
+                </article>  
+                   
+                <article class="masonry__brick entry format-quote" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <blockquote>
+                                <p>Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.</p>
+    
+                                <cite>Dieter Rams</cite>
+                        </blockquote>
+                    </div>   
+    
+                </article> 
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link"></a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">July 31, 2022</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Project 1.</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                    </div>
+    
+                </article> 
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link"></a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">July 31, 2022</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">No Sugar Oatmeal Cookies.</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                    </div>
+    
+                </article> 
+                <!-- END ARTICLE-->
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link" tabindex="-1"></a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html" tabindex="-1">August 10, 2022</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html" tabindex="-1">No Sugar Oatmeal Cookies.</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                    </div>
+    
+                </article>
+                <!-- END ARTICLE-->
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link" tabindex="-1"></a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html" tabindex="-1">September 10, 2022</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html" tabindex="-1">No Sugar Oatmeal Cookies.</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                    </div>
+    
+                </article>
+                <!-- END ARTICLE-->
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link" tabindex="-1"></a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html" tabindex="-1">July 31, 2022</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html" tabindex="-1">No Sugar.</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                    </div>
+    
+                </article>
+                <!-- END ARTICLE-->
+
+
+            </div> 
+        </div>  
+        <!-- END ARTICLES-->
+        <div class="row navigation-arrows">
+            <div class="col-full">
+                <nav class="pgn">
+                    <ul>
+                        <li><a class="pgn__prev" href="#0">Prev</a></li>
+                        <li><a class="pgn__next" href="#0">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+            <div class="col-eight md-six tab-full popular">
+                <h3>Squad of VB</h3>
+
+                <div class="block-1-2 block-m-full popular__posts">
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="./assets/images/user-01.jpg" a0lt="">
+                        </a>
+                        <h5><a href="#0">Employee of company
+                        </a></h5>
+                        <section class="popular__meta">
+                                <span class="popular__author"><a href="#0">Julian</a></span>
+                            <span class="popular__date"><time datetime="2016-07-19">Works from Jul 19, 2016</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="./assets/images/user-02.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">Employee of company</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><a href="#0">DACLAIS</a></span>
+                            <span class="popular__date"><time datetime="2017-07-19">Works from Jul 19, 2016</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="./assets/images/user-03.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">Employee of company
+                        </a></h5>
+                        <section class="popular__meta">
+                                <span class="popular__author"><a href="#0">HULIO</a></span>
+                            <span class="popular__date"><time datetime="2016-07-19">Works from Jul 19, 2016</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="./assets/images/user-04.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">Employee of company. The ideological inspirer of the project "VB".
+                        </a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><a href="#0">Vezuviy</a></span>
+                            <span class="popular__date"><time datetime="2016-07-19">Works from Jul 19, 2016</time></span>
+                        </section>
+                    </article>
+                </div> <!-- end popular_posts -->
+            </div> <!-- end popular -->
+            
+            <div class="col-four md-six tab-full about">
+                <h3>About Philosophy</h3>
+
+                <p>
+                    1.  Youtube channel. Five videos. 50 subscribers.
+                    <br>2. Instagram account with photos and videos for archive band. 134 publications. 96 followers. One of the company's most successful project.
+                    <br>3. Music band. Major project of company, but not successful. Best streaming result - 1137.  Most expensive project of company. 
+                </p>
+
+                <ul class="about__social">
+                    <li>
+                        <a href="#0"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+<!--
+        <div class="row bottom tags-wrap">
+            <div class="col-full tags">
+                <h3>Tags</h3>
+
+                <div class="tagcloud">
+                    <a href="#0">Salad</a>
+                    <a href="#0">Recipe</a>
+                    <a href="#0">Places</a>
+                    <a href="#0">Tips</a>
+                    <a href="#0">Friends</a>
+                    <a href="#0">Travel</a>
+                    <a href="#0">Exercise</a>
+                    <a href="#0">Reading</a>
+                    <a href="#0">Running</a>
+                    <a href="#0">Self-Help</a>
+                    <a href="#0">Vacation</a>
+                </div>
+            </div> 
+        </div>  end tags-wrap -->
+
+    </section> <!-- end s-extra -->
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+            <div class="row">
+                
+                <div class="col-two md-four mob-full s-footer__sitelinks">
+                        
+                    <h4>Quick Links</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="#0">Home</a></li>
+                        <li><a href="#0">Auction</a></li>
+                        <li><a href="#0">Albums</a></li>
+                        <li><a href="#0">Archive</a></li>
+                        <li><a href="#0">About</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__sitelinks -->
+
+                <div class="col-two md-four mob-full s-footer__archives">
+                        
+                    <h4>Archives</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="#0">January 2021</a></li>
+                        <li><a href="#0">December 2021</a></li>
+                        <li><a href="#0">November 2021</a></li>
+                        <li><a href="#0">October 2022</a></li>
+                        <li><a href="#0">September 2022</a></li>
+                        <li><a href="#0">August 2022</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__archives -->
+
+                <div class="col-two md-four mob-full s-footer__social">
+                        
+                    <h4>Social</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="#0">Soundcloud</a></li>
+                        <li><a href="#0">Instagram</a></li>
+                        <li><a href="#0">Telegram</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__social -->
+
+                <div class="col-five md-full end s-footer__subscribe">
+                        
+                    <h4>Your Suggestions</h4>
+
+                    <p>If you have any suggestions for improving the site, please send me an email.</p>
+
+                    <div class="subscribe-form">
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                
+                            <input type="submit" name="subscribe" value="Send">
+                
+                            <label for="mc-email" class="subscribe-message"></label>
+                
+                        </form>
+                    </div>
+
+                </div> <!-- end s-footer__subscribe -->
+
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="col-full">
+                    <div class="s-footer__copyright">
+                        <span>© VB CORPORATION 2016-2022</span> 
+                        <span>Site by <a href="">VB</a></span>
+                    </div>
+
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- preloader
+    ================================================== -->
+
+
+
+
+</body>
+
+</html>
